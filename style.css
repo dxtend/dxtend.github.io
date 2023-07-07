@@ -1,0 +1,79 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  color: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  margin: 50px 0;
+}
+main {
+  text-align: justify;
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1 span {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: normal;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+h1 a {
+  color: #000;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav a {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #000;
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 1.5rem;
+  text-decoration: none;
+  width: calc(50% - 10px);
+}
+a h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+a p {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  min-height: 4.5em;
+}
+p.main {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
+  margin: 0 1em 2rem;
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+      margin: 20px 1rem;
+  }
+  a {
+      width: 100%;
+  }
+  a p {
+    min-height: auto;
+  }
+}
